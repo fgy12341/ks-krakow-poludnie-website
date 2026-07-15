@@ -16,7 +16,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="logo-placeholder">KS</div>
+          <img src="/logo.svg" alt="KS Kraków Południe Logo" className="hero-logo" />
         </div>
       </div>
     </section>
