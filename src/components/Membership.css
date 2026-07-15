@@ -1,0 +1,79 @@
+.membership {
+  background-color: white;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: white;
+  border: 2px solid #eee;
+  border-radius: var(--border-radius);
+  padding: 40px 30px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+}
+
+.plan-card.highlighted {
+  border-color: var(--blue-dark);
+  box-shadow: 0 8px 24px rgba(0, 61, 165, 0.15);
+  transform: scale(1.05);
+}
+
+.plan-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.price {
+  margin-bottom: 30px;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+}
+
+.period {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.features li {
+  padding: 10px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid #eee;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.plan-card .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .plan-card.highlighted {
+    transform: scale(1);
+  }
+}
