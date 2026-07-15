@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logoImage from '../image.png'
 import './Header.css'
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <img src="/logo.svg" alt="KS Kraków Południe" className="logo-image" />
+            <img src={logoImage} alt="KS Kraków Południe" className="logo-image" />
             <div className="logo-text">KS Kraków Południe</div>
           </div>
           <button className="menu-toggle" onClick={toggleMenu}>

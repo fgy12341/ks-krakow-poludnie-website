@@ -1,4 +1,5 @@
 import React from 'react'
+import logoImage from '../image.png'
 import './Hero.css'
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-visual">
-          <img src="/logo.svg" alt="KS Kraków Południe Logo" className="hero-logo" />
+          <img src={logoImage} alt="KS Kraków Południe Logo" className="hero-logo" />
         </div>
       </div>
     </section>
